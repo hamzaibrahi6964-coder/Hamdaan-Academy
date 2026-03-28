@@ -1700,3 +1700,502 @@ a {
   background: #991b1b;
   color: white;
 }
+
+/* LOGIN PAGE */
+.login-page {
+  position: relative;
+  min-height: 100vh;
+  background: url("Hamdaan baground.jpg") center center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  padding: 80px 0;
+}
+
+.login-overlay,
+.portal-page-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to right, rgba(18, 8, 10, 0.88), rgba(18, 8, 10, 0.62));
+}
+
+.login-wrapper {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 34px;
+  align-items: center;
+}
+
+.login-info-card {
+  color: white;
+}
+
+.portal-badge {
+  display: inline-block;
+  padding: 8px 14px;
+  border-radius: 40px;
+  background: rgba(255, 255, 255, 0.12);
+  color: white;
+  font-size: 13px;
+  font-weight: 700;
+  margin-bottom: 14px;
+}
+
+.white-badge {
+  background: rgba(255, 255, 255, 0.12);
+  color: white;
+}
+
+.login-info-card h2 {
+  font-size: 52px;
+  line-height: 1.1;
+  margin-bottom: 16px;
+}
+
+.login-info-card p {
+  font-size: 17px;
+  color: #f3f4f6;
+  max-width: 560px;
+  margin-bottom: 24px;
+}
+
+.portal-points {
+  display: grid;
+  gap: 14px;
+  max-width: 520px;
+}
+
+.portal-point {
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255,255,255,0.08);
+  padding: 16px 18px;
+  border-radius: 14px;
+  font-weight: 600;
+}
+
+.login-form-card {
+  background: white;
+  border-radius: 24px;
+  padding: 34px;
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.18);
+}
+
+.login-logo-box {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.login-logo-box img {
+  width: 74px;
+  height: 74px;
+  object-fit: contain;
+  margin: 0 auto 14px;
+}
+
+.login-logo-box h3 {
+  font-size: 30px;
+  color: #111827;
+  margin-bottom: 6px;
+}
+
+.login-logo-box p {
+  color: #6b7280;
+  font-size: 15px;
+}
+
+.form-group {
+  margin-bottom: 16px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: #374151;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 15px 16px;
+  border: 1px solid #d7dce2;
+  border-radius: 10px;
+  outline: none;
+  font-size: 15px;
+  background: #fff;
+}
+
+.login-btn {
+  width: 100%;
+  border: none;
+  background: #b91c1c;
+  color: white;
+  padding: 15px;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  margin-top: 8px;
+}
+
+.login-btn:hover {
+  background: #991b1b;
+}
+
+.portal-note {
+  margin-top: 18px;
+  text-align: center;
+  color: #6b7280;
+  font-size: 14px;
+}
+
+/* PORTAL PAGE */
+.portal-page-banner {
+  position: relative;
+  min-height: 380px;
+  background: url("Hamdaan baground.jpg") center center/cover no-repeat;
+  display: flex;
+  align-items: center;
+}
+
+.portal-page-content {
+  position: relative;
+  z-index: 2;
+  color: white;
+  text-align: center;
+  padding: 80px 0;
+}
+
+.portal-page-content h2 {
+  font-size: 52px;
+  margin-bottom: 14px;
+}
+
+.portal-page-content p {
+  font-size: 18px;
+  color: #f3f4f6;
+  max-width: 760px;
+  margin: auto;
+}
+
+.portal-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.portal-grid-three {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.portal-card {
+  background: white;
+  border-radius: 22px;
+  padding: 30px 24px;
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.06);
+  text-align: center;
+  transition: 0.3s;
+}
+
+.portal-card:hover {
+  transform: translateY(-6px);
+}
+
+.portal-icon {
+  width: 64px;
+  height: 64px;
+  border-radius: 16px;
+  background: rgba(185, 28, 28, 0.08);
+  color: #b91c1c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: 800;
+  margin: 0 auto 18px;
+}
+
+.portal-card h3 {
+  font-size: 24px;
+  color: #111827;
+  margin-bottom: 12px;
+}
+
+.portal-card p {
+  color: #6b7280;
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+
+.portal-link-btn {
+  display: inline-block;
+  background: #b91c1c;
+  color: white;
+  padding: 13px 20px;
+  border-radius: 10px;
+  font-weight: 700;
+}
+
+.portal-link-btn:hover {
+  background: #991b1b;
+}
+
+/* DASHBOARD */
+.dashboard-layout {
+  display: grid;
+  grid-template-columns: 270px 1fr;
+  min-height: 100vh;
+  background: #f7f8fc;
+}
+
+.sidebar {
+  background: #111111;
+  color: white;
+  padding: 24px 18px;
+}
+
+.sidebar-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+  margin-bottom: 24px;
+}
+
+.sidebar-brand img {
+  width: 52px;
+  height: 52px;
+  object-fit: contain;
+  background: white;
+  border-radius: 10px;
+  padding: 4px;
+}
+
+.sidebar-brand h2 {
+  font-size: 22px;
+}
+
+.sidebar-brand p {
+  font-size: 13px;
+  color: #d1d5db;
+}
+
+.sidebar-links {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.sidebar-links a {
+  color: #e5e7eb;
+  padding: 12px 14px;
+  border-radius: 10px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.sidebar-links a:hover,
+.sidebar-links a.active {
+  background: #b91c1c;
+  color: white;
+}
+
+.dashboard-main {
+  padding: 30px;
+}
+
+.dashboard-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 28px;
+  flex-wrap: wrap;
+}
+
+.dashboard-top h1 {
+  font-size: 34px;
+  color: #111827;
+  margin-bottom: 4px;
+}
+
+.dashboard-top p {
+  color: #6b7280;
+}
+
+.dashboard-btn {
+  background: #b91c1c;
+  color: white;
+  padding: 12px 18px;
+  border-radius: 10px;
+  font-weight: 700;
+}
+
+.dashboard-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 22px;
+  margin-bottom: 28px;
+}
+
+.dash-card {
+  background: white;
+  padding: 24px;
+  border-radius: 18px;
+  box-shadow: 0 10px 24px rgba(0,0,0,0.06);
+  border-top: 4px solid #b91c1c;
+}
+
+.dash-card h3 {
+  font-size: 28px;
+  color: #111827;
+  margin-bottom: 6px;
+}
+
+.dash-card p {
+  color: #6b7280;
+  font-weight: 600;
+}
+
+.dashboard-grid-two {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin-bottom: 28px;
+}
+
+.dashboard-panel {
+  background: white;
+  padding: 26px;
+  border-radius: 18px;
+  box-shadow: 0 10px 24px rgba(0,0,0,0.06);
+  margin-bottom: 24px;
+}
+
+.dashboard-panel h3 {
+  margin-bottom: 18px;
+  color: #111827;
+  font-size: 24px;
+}
+
+.dashboard-list {
+  list-style: none;
+}
+
+.dashboard-list li {
+  padding: 12px 0;
+  border-bottom: 1px solid #ececec;
+  color: #374151;
+  font-weight: 600;
+}
+
+.dashboard-list li:last-child {
+  border-bottom: none;
+}
+
+.quick-actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+}
+
+.quick-actions a {
+  background: #f8e9ea;
+  color: #8b1118;
+  padding: 14px;
+  border-radius: 12px;
+  text-align: center;
+  font-weight: 700;
+}
+
+.quick-actions a:hover {
+  background: #f3d6d8;
+}
+
+.dashboard-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.dashboard-table th,
+.dashboard-table td {
+  text-align: left;
+  padding: 14px 12px;
+  border-bottom: 1px solid #ececec;
+}
+
+.dashboard-table th {
+  color: #111827;
+  background: #faf7f7;
+}
+
+.dashboard-table td {
+  color: #4b5563;
+  font-weight: 600;
+}
+
+@media (max-width: 1100px) {
+  .login-wrapper,
+  .portal-grid,
+  .portal-grid-three {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .login-info-card h2,
+  .portal-page-content h2 {
+    font-size: 42px;
+  }
+
+  .dashboard-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .dashboard-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .login-wrapper,
+  .portal-grid,
+  .portal-grid-three,
+  .dashboard-cards,
+  .dashboard-grid-two,
+  .quick-actions {
+    grid-template-columns: 1fr;
+  }
+
+  .login-page {
+    padding: 60px 0;
+  }
+
+  .login-info-card h2,
+  .portal-page-content h2 {
+    font-size: 32px;
+  }
+
+  .login-info-card p,
+  .portal-page-content p {
+    font-size: 16px;
+  }
+
+  .login-form-card {
+    padding: 24px;
+  }
+
+  .dashboard-main {
+    padding: 20px;
+  }
+
+  .dashboard-top h1 {
+    font-size: 28px;
+  }
+
+  .dashboard-table {
+    display: block;
+    overflow-x: auto;
+  }
+}
