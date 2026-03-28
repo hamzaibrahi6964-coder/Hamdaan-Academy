@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hamdaan Academy | Portal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="top-bar">
+    <div class="container top-bar-content">
+      <p>Hamdaan Academy | Islamic & Western Education</p>
+      <p>Portal Access Center</p>
+    </div>
+  </div>
+
+  <header class="header">
+    <div class="container navbar">
+      <a href="index.html" class="brand">
+        <img src="Hamdaan Academy.png" alt="Hamdaan Academy Logo">
+        <div class="brand-text">
+          <h1>Hamdaan Academy</h1>
+          <span>Tudun Wada, Kaduna State</span>
+        </div>
+      </a>
+
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="login.html" class="active">Portal</a>
+      </nav>
+
+      <div class="menu-btn" onclick="toggleMenu()">☰</div>
+    </div>
+
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="index.html">Home</a>
+      <a href="login.html">Portal Login</a>
+    </div>
+  </header>
+
+  <section class="portal-page-banner">
+    <div class="portal-page-overlay"></div>
+
+    <div class="container portal-page-content">
+      <span class="portal-badge white-badge">Hamdaan Academy Portal</span>
+      <h2>Choose Your Dashboard</h2>
+      <p id="welcomeRoleText">
+        Welcome to the portal. Select the dashboard that matches your role.
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="portal-grid">
+        <div class="portal-card">
+          <div class="portal-icon">A</div>
+          <h3>Admin Dashboard</h3>
+          <p>Manage school records, students, staff, fees, announcements, and results.</p>
+          <a href="admin-dashboard.html" class="portal-link-btn">Open Admin Dashboard</a>
+        </div>
+
+        <div class="portal-card">
+          <div class="portal-icon">T</div>
+          <h3>Teacher Dashboard</h3>
+          <p>Manage class records, attendance, assignments, results, and remarks.</p>
+          <a href="teacher-dashboard.html" class="portal-link-btn">Open Teacher Dashboard</a>
+        </div>
+
+        <div class="portal-card">
+          <div class="portal-icon">P</div>
+          <h3>Parent Dashboard</h3>
+          <p>Track child performance, attendance, school updates, and fees information.</p>
+          <a href="parent-dashboard.html" class="portal-link-btn">Open Parent Dashboard</a>
+        </div>
+
+        <div class="portal-card">
+          <div class="portal-icon">S</div>
+          <h3>Student Dashboard</h3>
+          <p>View profile, classes, results, attendance, assignments, and announcements.</p>
+          <a href="student-dashboard.html" class="portal-link-btn">Open Student Dashboard</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section light-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">Portal Access</span>
+        <h2>Designed for Every School User</h2>
+        <p>
+          The Hamdaan Academy portal is built to give each role the right tools and information.
+        </p>
+      </div>
+
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-number">01</div>
+          <h3>Admin Control</h3>
+          <p>Access complete school management tools from one dashboard.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-number">02</div>
+          <h3>Teacher Tools</h3>
+          <p>Manage class activities, student records, and academic work easily.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-number">03</div>
+          <h3>Parent Access</h3>
+          <p>See child progress, messages, and important school information.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-number">04</div>
+          <h3>Student Support</h3>
+          <p>Students can check results, attendance, assignments, and updates.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-brand">
+        <img src="Hamdaan Academy.png" alt="Hamdaan Academy Logo">
+        <div>
+          <h3>Hamdaan Academy</h3>
+          <p>Islamic & Western Education</p>
+        </div>
+      </div>
+
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="login.html">Portal Login</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function toggleMenu() {
+      document.getElementById("mobileMenu").classList.toggle("show");
+    }
+
+    var params = new URLSearchParams(window.location.search);
+    var role = params.get("role");
+    var welcomeRoleText = document.getElementById("welcomeRoleText");
+
+    if (role === "admin") {
+      welcomeRoleText.innerHTML = "Welcome Admin. You can now continue to the administrative dashboard.";
+    } else if (role === "teacher") {
+      welcomeRoleText.innerHTML = "Welcome Teacher. You can now continue to the teaching dashboard.";
+    } else if (role === "parent") {
+      welcomeRoleText.innerHTML = "Welcome Parent. You can now continue to the parent dashboard.";
+    } else if (role === "student") {
+      welcomeRoleText.innerHTML = "Welcome Student. You can now continue to the student dashboard.";
+    }
+  </script>
+
+</body>
+</html>
