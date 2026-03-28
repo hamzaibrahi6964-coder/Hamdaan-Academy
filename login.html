@@ -65,7 +65,7 @@
           <div class="portal-point">Admin access and management</div>
           <div class="portal-point">Teacher class records and results</div>
           <div class="portal-point">Parent child progress tracking</div>
-          <div class="portal-point">Student academic dashboard</div>
+          <div class="portal-point">Student page opened through parent dashboard</div>
         </div>
       </div>
 
@@ -88,8 +88,8 @@
           </div>
 
           <div class="form-group">
-            <label>Email / ID</label>
-            <input type="text" id="username" placeholder="Enter email or ID">
+            <label>Email / Student ID</label>
+            <input type="text" id="username" placeholder="Enter email or student ID">
           </div>
 
           <div class="form-group">
@@ -101,7 +101,7 @@
         </form>
 
         <p class="portal-note">
-          Demo page only. This design will later connect to your real portal system.
+          Parent can log in with email or student ID. Student does not log in directly.
         </p>
       </div>
     </div>
@@ -146,7 +146,13 @@
         return;
       }
 
-      window.location.href = "portal.html?role=" + role;
+      if (role === "admin") {
+        window.location.href = "admin-dashboard.html";
+      } else if (role === "teacher") {
+        window.location.href = "teacher-dashboard.html";
+      } else if (role === "parent") {
+        window.location.href = "parent-dashboard.html";
+      }
     });
   </script>
 
